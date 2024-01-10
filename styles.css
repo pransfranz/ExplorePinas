@@ -211,3 +211,72 @@ p, a, button {
   display: block; /* Make the image a block element */
   margin: 5px auto 10px; /* Center the image and provide spacing */
 }
+
+
+.lastsection1 {
+  background: url(images/dot-lovetheph-bg2.jpg) no-repeat;
+  background-position: 70% top;
+  min-height: 400px;
+  background-size: cover;
+}
+.lastsection2 {
+  background: url(images/dot-lovetheph-bg3.jpg) no-repeat;
+  background-position: 50% top;
+  min-height: 400px;
+  background-size: cover;
+}
+
+.lastsection3 {
+  background: url(images/@jacob-badian-cebu-2.jpg) no-repeat;
+  background-position: 70% bottom;
+  min-height: 400px;
+  background-size: cover;
+}
+
+.lastsection4 {
+  background: url(images/dot-lovetheph-bg4.jpg) no-repeat;
+  background-position: 50% bottom;
+  min-height: 400px;
+  background-size: cover;
+}
+
+section h5 {
+  font-weight: 400;
+  font-size: 23px;
+  text-decoration: none;
+  color: white;
+}
+
+.lastsection1, .lastsection2, .lastsection3, .lastsection4 {
+  position: relative;
+}
+
+
+
+.lastsection1 h5 {
+  position: absolute;
+  bottom: 40px;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.lastsection2 h5 {
+  position: absolute;
+  top: 40px;
+  left: 34%;
+  transform: translateX(-50%);
+}
+.lastsection3 h5 {
+  position: absolute;
+  bottom: 36px;
+  left: 54%;
+  transform: translateX(-50%);
+}
+.lastsection4 h5 {
+  position: absolute;
+  bottom: 40px;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+
