@@ -2,34 +2,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  
 }
 
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: Barabara;
   src: url(font/BARABARA-final.otf);
 } 
+@font-face {
+  font-family: Montserrat;
+  src: url(font/Montserrat-VariableFont_wght.ttf);
+} 
 
-p {
+p, a, button {
   font-family: Montserrat;
 }
 
 #navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  background-color: #333;
+  background-color: #121212;
   position: fixed;
   top: 0;
-  width: 100%
-
+  width: 100%;
+  z-index: 19;
 }
 
+
 #navbar a {
-  display: block;
   font: 18px Barabara;
   text-decoration: none;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 12px 8px;
+  
 }
 
 #home{
@@ -43,8 +54,160 @@ p {
 
 #home h1 {
   font: 36px Barabara;
+  text-align: center;
 }
 
 #home h1, p{
   color: white
+}
+
+#home button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 20px 2px;
+  border-radius: 18px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.logos-slide{
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+
+
+
+
+#explore {
+  position: relative;
+}
+
+#video1 {
+  
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.logo {
+  width: 400px; 
+  height: auto;
+  margin-bottom: 56px;
+}
+
+.menu {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  
+  align-items: center; /* Align the content vertically */
+  justify-content: center; /* Align the content horizontally */
+}
+
+
+.btn-1,
+.btn-2,
+.btn-3 {
+  border: none;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding: 0 10%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.menu .btn-1:hover::before,
+.menu .btn-2:hover::before,
+.menu .btn-3:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  z-index: -1; /* Place the background behind the text and icon */
+}
+
+.btn-1::before {
+  background-image: url("images/dot-category-sunbeach-bg.jpg");
+}
+
+.btn-2::before {
+  background-image: url("images//dot-category-dive-bg.jpg");
+}
+
+.btn-3::before {
+  background-image: url("images/dot-category-nature-bg.jpg");
+}
+
+
+.menu .btn-1:hover {
+  transform: scale(1.1); /* Example: scale the button on hover */
+}
+
+.menu .btn-2:hover {
+  transform: scale(1.1);
+}
+
+.menu .btn-3:hover {
+  transform: scale(1.1);
+}
+
+.btn-1 {
+  background-color: #007bff;
+}
+
+.btn-2 {
+  background-color: rgba(173, 201, 57, 1);
+}
+
+.btn-3 {
+  background-color: #f39c12;
+}
+
+.btn-1 img,
+.btn-2 img,
+.btn-3 img {
+  display: block; /* Make the image a block element */
+  margin: 5px auto 10px; /* Center the image and provide spacing */
 }
