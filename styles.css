@@ -22,7 +22,7 @@ p, a, button {
   font-family: Montserrat;
 }
 
-#navbar {
+.nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,11 +31,15 @@ p, a, button {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 19;
+  z-index: 4;
+}
+
+.nav-links:hover, button{
+  cursor: pointer;
 }
 
 
-#navbar a {
+#navbar h2 {
   font: 18px Barabara;
   text-decoration: none;
   color: white;
