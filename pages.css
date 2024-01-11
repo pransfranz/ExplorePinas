@@ -95,7 +95,7 @@
   color: white;
   position: absolute;
   top: 50%;
-  left: 12%;
+  left: 7%;
   translate: translate(-50%, -50%);
   
 }
@@ -106,7 +106,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-background-color: #131313;
+  background-color: #131313;
 }
 
 .slider-container h2 {
@@ -120,7 +120,6 @@ background-color: #131313;
   color: white;
   background-color: #04A3E0;
   max-width: 600px;
-  
 }
 
 .slider-wrapper {
@@ -134,7 +133,6 @@ background-color: #131313;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  
 }
 
 .slider::-webkit-scrollbar {
@@ -145,7 +143,6 @@ background-color: #131313;
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
-  
 }
 
 .slider-nav {
@@ -155,7 +152,7 @@ background-color: #131313;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1 ;
+  z-index: 1;
 }
 
 .slider-nav a {
@@ -167,6 +164,24 @@ background-color: #131313;
   transition: opacity ease 250ms;
 }
 
-.slider-nav a:hover{
+.slider-nav a:hover {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    max-width: 100%;
+  }
+  
+  .slider {
+    scroll-snap-type: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .slider img {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+  }
 }
