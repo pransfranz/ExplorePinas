@@ -103,15 +103,23 @@
 .slider-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
+  background-color: #131313;
   padding: 2rem;
+}
+.slider-container-wopadding {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
   background-color: #131313;
 }
 
+
 .slider-container h2 {
-  margin: 10px auto;
-  padding: 12px;
+  margin-top: 30px;
+  padding: 16px;
   border-radius: 15px 15px 0 0;
   font: 26px Barabara;
   font-weight: 700;
@@ -124,7 +132,7 @@
 
 .slider-wrapper {
   position: relative;
-  max-width: 32rem;
+  max-width: 34rem;
   margin: 0 auto;
 }
 
@@ -142,7 +150,6 @@
 .slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
-  aspect-ratio: 27/40;
   object-fit: cover;
 }
 
@@ -177,11 +184,15 @@
 
 }
 
+
 @media (max-width: 768px) {
+
+
   .slider-wrapper {
     max-width: 100%;
   }
   
+
   .slider {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;

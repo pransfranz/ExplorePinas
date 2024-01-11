@@ -281,6 +281,10 @@ section h5 {
   transform: translateX(-50%);
 }
 
+footer{
+  width: 100%;
+}
+
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -297,14 +301,13 @@ section h5 {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #333;
 }
 
 .nav-links-footer img {
   margin-right: 10px;
 }
 
-.nav-links-footer h2 {
+.nav-links-footer h3 {
   font: 18px Barabara;
   text-decoration: none;
   color: #f8f8f8;
