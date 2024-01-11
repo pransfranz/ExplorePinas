@@ -142,6 +142,7 @@
 .slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
+  aspect-ratio: 27/40;
   object-fit: cover;
 }
 
@@ -168,13 +169,20 @@
   opacity: 1;
 }
 
+
+.card-overlay{
+  position: sticky;
+  bottom: 0;
+  left: 0;
+
+}
+
 @media (max-width: 768px) {
   .slider-wrapper {
     max-width: 100%;
   }
   
   .slider {
-    scroll-snap-type: none;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
