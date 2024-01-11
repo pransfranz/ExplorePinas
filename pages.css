@@ -103,16 +103,16 @@
 .slider-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: #131313;
   padding: 2rem;
 }
 .slider-container-wopadding {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: #131313;
 }
 
@@ -130,10 +130,10 @@
   max-width: 600px;
 }
 
+
 .slider-wrapper {
   position: relative;
-  max-width: 34rem;
-  margin: 0 auto;
+  max-width: 32rem;
 }
 
 .slider {
@@ -186,7 +186,9 @@
 
 
 @media (max-width: 768px) {
-
+  .slider-container h2 {
+    align-self: flex-start;
+  }
 
   .slider-wrapper {
     max-width: 100%;
