@@ -46,7 +46,7 @@
   border-radius: 10px;
   max-width: 300px;
   min-width: 250px;
-  border-radius: 10px;
+
 }
 
 .card img {
@@ -97,18 +97,12 @@
 
 .slider-container {
   display: flex;
-
+flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
   background-color: #131313;
   padding: 2rem;
-}
-.slider-container-wopadding {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: #131313;
 }
 
 .slider-container h2 {
@@ -123,7 +117,6 @@
   background-color: #04a3e0;
   max-width: 20rem;
 }
-
 
 .slider-wrapper {
   position: relative;
@@ -190,6 +183,27 @@
   padding: 10px;
 }
 
+
+
+
+.activities-banner {
+  background: url(images/wheretogo/dot-seeanddo-banner.jpg) no-repeat;
+  background-position: 50% bottom;
+  min-height: 400px;
+  background-size: cover;
+  position: relative;
+}
+
+.container p{
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 15%;
+  left: 7%;
+  translate: translate(-50%, -50%);
+  width: 40%;
+}
+
 @media (max-width: 768px) {
   .slider-container h2 {
     align-self: flex-start;
@@ -208,5 +222,20 @@
     flex: 1 0 auto;
     width: 100%;
     height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container p {
+    width: 100%;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
   }
 }

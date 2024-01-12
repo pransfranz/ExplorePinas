@@ -1,0 +1,20 @@
+#topdestinations {
+  background: none;
+  background-color: #377EDC;
+}
+
+.cardset {
+  padding:3%;
+  gap: 30px;
+}
+
+.card {
+  
+  border-radius: 180px 180px 30px 30px;
+  max-width: 360px;
+  min-width: 280px;
+}
+
+.card p {
+  font-size: 14px;
+}
