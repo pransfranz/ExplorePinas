@@ -28,12 +28,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  background-color: #121212;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 4;
+  margin: 0 auto;
 }
 
 .nav-links:hover,
@@ -41,11 +36,27 @@ button {
   cursor: pointer;
 }
 
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #121212;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
+
 #navbar h2 {
   font: 18px Barabara;
   text-decoration: none;
   color: white;
   padding: 12px 8px;
+}
+
+.back-button{
+  margin-left: 20px;
 }
 
 #home {
