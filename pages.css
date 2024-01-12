@@ -124,18 +124,6 @@
   max-width: 20rem;
 }
 
-.slider-container-wopadding h2 {
-  margin-top: 30px;
-  padding: 16px;
-  border-radius: 15px 15px 0 0;
-  font: 24px Barabara;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  background-color: #04a3e0;
-  max-width: 20rem;
-}
 
 .slider-wrapper {
   position: relative;
