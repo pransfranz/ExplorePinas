@@ -20,7 +20,7 @@ body {
 
 p,
 a,
-button {
+button, body {
   font-family: Montserrat;
 }
 
