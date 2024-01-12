@@ -102,17 +102,17 @@
 
 .slider-container {
   display: flex;
-  flex-direction: column;
+  
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
   background-color: #131313;
   padding: 2rem;
 }
 .slider-container-wopadding {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: #131313;
 }
 
@@ -127,7 +127,7 @@
   text-transform: uppercase;
   color: white;
   background-color: #04A3E0;
-  max-width: 600px;
+  max-width: 20rem;
 }
 
 .slider-container-wopadding h2 {
@@ -140,13 +140,13 @@
   text-transform: uppercase;
   color: white;
   background-color: #04A3E0;
-  max-width: 32rem;
+  max-width: 20rem;
 }
 
 
 .slider-wrapper {
   position: relative;
-  max-width: 32rem;
+  max-width: 20rem;
 }
 
 .slider {
@@ -182,8 +182,8 @@
 }
 
 .slider-nav a {
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.75;
@@ -221,7 +221,12 @@
     max-width: 100%;
   }
   
+  .slider-container, .slider-container-wopadding{
+    flex-direction: column;
+  }
+
   
+
   .slider img {
     flex: 1 0 auto;
     width: 100%;
