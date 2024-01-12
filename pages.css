@@ -130,6 +130,19 @@
   max-width: 600px;
 }
 
+.slider-container-wopadding h2 {
+  margin-top: 30px;
+  padding: 16px;
+  border-radius: 15px 15px 0 0;
+  font: 24px Barabara;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #04A3E0;
+  max-width: 32rem;
+}
+
 
 .slider-wrapper {
   position: relative;
@@ -147,10 +160,15 @@
   display: none;
 }
 
-.slider img {
+.slider img, .slide {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
+}
+
+.slider img {
+  height: 100%;
+  width: 100%;
 }
 
 .slider-nav {
@@ -177,11 +195,20 @@
 }
 
 
-.card-overlay{
-  position: sticky;
-  bottom: 0;
-  left: 0;
 
+
+.slide {
+  position: relative;
+}
+
+.slide p {
+  font: 28px Barabara;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  color: white;
+  padding: 10px;
 }
 
 
