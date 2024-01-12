@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   background: url(images/philippines_dot_surigao-2-sugba-lagoon-1.jpg);
-  
 }
 .headline {
   margin-top: 60px;
@@ -34,7 +33,6 @@
   min-height: 90vh;
   padding: 5%;
   gap: 20px;
-  
 }
 
 .card {
@@ -56,14 +54,13 @@
   vertical-align: top;
   max-width: 100%;
   transition: 0.25s ease-in-out;
-  
 }
 
 .card:hover img {
   transform: scale(1.1);
- 
 }
-.card figcaption, .card p{
+.card figcaption,
+.card p {
   color: black;
   background: #d7d8d8;
   padding: 10px 15px;
@@ -71,7 +68,7 @@
   font-size: 13px;
 }
 
-.card h3{
+.card h3 {
   font: 21px Barabara;
   font-weight: 700;
   text-transform: uppercase;
@@ -79,9 +76,8 @@
   padding: 10px 0;
 }
 
-.wheretogo-banner{
-  background: url(images/wheretogo/dot-wheretogo-banner.jpg) 
-  no-repeat;
+.wheretogo-banner {
+  background: url(images/wheretogo/dot-wheretogo-banner.jpg) no-repeat;
   background-position: 50% bottom;
   min-height: 400px;
   background-size: cover;
@@ -97,12 +93,11 @@
   top: 50%;
   left: 7%;
   translate: translate(-50%, -50%);
-  
 }
 
 .slider-container {
   display: flex;
-  
+
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
@@ -116,7 +111,6 @@
   background-color: #131313;
 }
 
-
 .slider-container h2 {
   margin-top: 30px;
   padding: 16px;
@@ -126,7 +120,7 @@
   text-align: center;
   text-transform: uppercase;
   color: white;
-  background-color: #04A3E0;
+  background-color: #04a3e0;
   max-width: 20rem;
 }
 
@@ -139,10 +133,9 @@
   text-align: center;
   text-transform: uppercase;
   color: white;
-  background-color: #04A3E0;
+  background-color: #04a3e0;
   max-width: 20rem;
 }
-
 
 .slider-wrapper {
   position: relative;
@@ -160,7 +153,8 @@
   display: none;
 }
 
-.slider img, .slide {
+.slider img,
+.slide {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
@@ -194,9 +188,6 @@
   opacity: 1;
 }
 
-
-
-
 .slide {
   position: relative;
 }
@@ -211,7 +202,6 @@
   padding: 10px;
 }
 
-
 @media (max-width: 768px) {
   .slider-container h2 {
     align-self: flex-start;
@@ -220,12 +210,11 @@
   .slider-wrapper {
     max-width: 100%;
   }
-  
-  .slider-container, .slider-container-wopadding{
+
+  .slider-container,
+  .slider-container-wopadding {
     flex-direction: column;
   }
-
-  
 
   .slider img {
     flex: 1 0 auto;
