@@ -333,12 +333,27 @@ footer{
 
 
 @media (max-width: 768px) {
+
+  .nav-links {
+    padding: 8px 0;
+    font-size: 16px;
+  }
   #home h1 {
     font-size: 32px;
   }
 
+  .menu img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu {
+    font-size: 16px;
+    font-weight: 500px;
+  }
   .logo {
     width: 300px;
+    padding-bottom: 106px;
   }
 
   .btn-1, .btn-2, .btn-3 {
@@ -346,5 +361,6 @@ footer{
     font-weight: 500px;
     width: 120px;
     height: 120px;
+    margin-bottom: 73px;
   }
 }
