@@ -174,16 +174,14 @@ flex-wrap: wrap;
 }
 
 .slide p {
-  font: 28px Barabara;
+  font: 26px Barabara;
   text-transform: uppercase;
   position: absolute;
-  bottom: 60px;
+  bottom: 30px;
   left: 20px;
   color: white;
   padding: 10px;
 }
-
-
 
 
 .activities-banner {
