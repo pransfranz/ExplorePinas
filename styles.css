@@ -48,10 +48,10 @@ button {
   z-index: 4;
 }
 
-#navbar h2 {
+.nav-links {
   font: 18px Barabara;
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding: 12px 8px;
 }
 
@@ -331,3 +331,20 @@ footer{
   color: #f8f8f8;
 }
 
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 32px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .btn-1, .btn-2, .btn-3 {
+    font-size: 14px;
+    font-weight: 500px;
+    width: 120px;
+    height: 120px;
+  }
+}

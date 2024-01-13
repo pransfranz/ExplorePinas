@@ -205,6 +205,8 @@ flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
+  
+
   .slider-container h2 {
     align-self: flex-start;
   }
