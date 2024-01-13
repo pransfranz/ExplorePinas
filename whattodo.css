@@ -1,5 +1,5 @@
-#topdestinations {
-  background: none;
+#activities {
+  padding-top: 50px;
   background-color: #377EDC;
 }
 
@@ -8,11 +8,19 @@
   gap: 30px;
 }
 
+#video1 {
+  width: 100%;
+  height: auto;
+}
+
+.headline {
+  margin-top: 30px;
+}
 .card {
   
-  border-radius: 36px;
-  max-width: 360px;
-  min-width: 280px;
+  border-radius: 24px;
+  max-width: 330px;
+  min-width: 250px;
 }
 
 .card p {
