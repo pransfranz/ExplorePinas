@@ -205,10 +205,21 @@ flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
-  
+  .headline h1 {
+    font-size: 32px;
+  }
+  #topdestinations {
+    padding-top: 120px;
+  }
 
+  .headline p {
+    max-width: 90%;
+    font-size: 16px;
+    text-shadow: 2px 1px rgba(15, 15, 15, 0.356);
+  }
   .slider-container h2 {
     align-self: flex-start;
+    font-size: 24px;
   }
 
   .slider-wrapper {
