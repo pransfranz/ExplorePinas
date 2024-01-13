@@ -202,6 +202,11 @@ flex-wrap: wrap;
   width: 40%;
 }
 
+.video2 {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .headline h1 {
     font-size: 32px;
